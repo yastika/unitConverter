@@ -1,0 +1,149 @@
+html, body {
+    position: absolute;
+width: 550px;
+height: 550px;
+margin: 0px;
+/* left: 705px;
+top: 83px; */
+
+background: #FBF7EE;
+}
+
+.main-div{
+    /* position: absolute;
+width: 550px;
+height: 260px;
+left: 0px;
+top: 0px; */
+/* background */
+
+
+position: absolute;
+width: 550px;
+height: 260px;
+left: 0px;
+top: 0px;
+
+background: linear-gradient(246.26deg, #585DFE 0%, #FB3796 100%);
+}
+
+.main-heading{
+    /* Heading */
+
+
+position: absolute;
+width: 448.4px;
+height: 38px;
+left: 51px;
+top: 53px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 800;
+font-size: 22px;
+line-height: 38px;
+/* identical to box height, or 173% */
+
+text-align: center;
+letter-spacing: -0.05em;
+
+color: #FFFFFF;
+}
+
+.number{
+    /* number to convert */
+
+
+position: absolute;
+width: 211px;
+height: 80px;
+left: 169px;
+top: 135px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 800;
+font-size: 97.5723px;
+line-height: 39px;
+/* or 25% */
+
+text-align: center;
+
+color: #FFFFFF;
+background: transparent;
+border: none;
+}
+
+.result{
+    position: absolute;
+width: 346px;
+height: 215px;
+left: 102px;
+top: 297px;
+text-align: center;
+}
+
+.heading{
+    /* Supporting text */
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 20px;
+/* or 143% */
+
+text-align: center;
+
+color: #1A1921;
+}
+
+.conversion{
+    /* Supporting text */
+/* text-sm/leading-5/font-normal */
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 20px;
+/* or 143% */
+
+text-align: center;
+
+color: #4E4E4E;
+}
+
+.conversion-result1{
+    /* conversion-results */
+
+
+position: absolute;
+width: 346px;
+height: 55px;
+left: 10px;
+}
+
+.conversion-result2{
+    /* conversion-results */
+
+
+position: absolute;
+width: 346px;
+height: 55px;
+left: 10px;
+top: 50px;
+}
+
+.conversion-result3{
+    /* conversion-results */
+
+
+position: absolute;
+width: 346px;
+height: 51px;
+left: 10px;
+top: 100px;
+
+}
+
+input:focus {outline: none; }
