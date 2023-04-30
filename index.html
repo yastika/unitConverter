@@ -6,9 +6,10 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
     </head>
     <body onload="convertUnit()">
+        <div class="ui-display">
         <div class="main-div">
             <p class="main-heading">Metric/Imperial Unit Conversion</p> 
-            <input id="convNumber" class="number" >
+            <input id="convNumber" class="number" type = "text" value="0">
         </div>
        <div class="result">
            <div class="conversion-result1">
@@ -29,6 +30,7 @@
             <span id="Mass" class="conversion"></span>
            </div>
        </div>
+    </div>
         <script src="index.js"></script>
     </body>
 </html>

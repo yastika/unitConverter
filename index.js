@@ -1,11 +1,8 @@
 let getNum = document.getElementById("convNumber")
-// let convertNum = parseInt(getNum)
-// console.log(convertNum)
 
 let lenStmt = document.getElementById("length")
 let volStmt = document.getElementById("volume")
 let massStmt = document.getElementById("Mass")
-
 
 
  function convertUnit(){
@@ -18,16 +15,52 @@ let massStmt = document.getElementById("Mass")
  }
  
  getNum.addEventListener("keydown", function(e){
-     if(e.key === "Enter"){
-     num = parseInt(getNum.value)
-     console.log(num)
-     convertLen(num)
-     convertVol(num)
-     convertMass(num)
-     }
+    e.preventDefault()
+    var num = ""
+    if(e.key >= 0 || e.key <= 9 || e.key === "Backspace" || e.key === "Delete"){
+        if(e.key != "Backspace"){
+            if(getNum.value === "0"){
+                getNum.value = e.key
+            }
+            else{
+                getNum.value += ""+ e.key
+            }
+            num = getNum.value
+            convertLen(num)
+            convertVol(num)
+            convertMass(num)
+        }
+        else{
+            num = getNum.value
+            if(num === "0"){
+                alert("Input cannot be empty!")
+            }
+            else if(num != "0" && num.length === 1){
+                getNum.value = "0"
+                convertUnit()
+            }
+            else{
+                num = getNum.value
+                num = num.slice(0,-1)
+                getNum.value = num
+                convertLen(num)
+                convertVol(num)
+                convertMass(num)
+            }
+        }
+        
+    }
+    else{
+        console.log(e.key)
+        alert("Please enter digits from 0-9")
+     }   
+    
  })
  
  function convertLen(num){
+    // console.log(num)
+     num = parseInt(num, 10)
+     console.log("radix", num)
      let feet = num * 3.2808
      let meters = num * 0.3048
      let length_ = ""
@@ -41,6 +74,7 @@ let massStmt = document.getElementById("Mass")
  }
  
  function convertVol(num){
+     num = parseInt(num)
      let gallons = num * 0.2641
      let liters = num * 3.7854
      let vol_ = ""
@@ -54,6 +88,7 @@ let massStmt = document.getElementById("Mass")
  }
  
  function convertMass(num){
+      num = parseInt(num)
       let kilos = num * 2.2046
       let pounds = num * 0.4535
       let mass_ =""
