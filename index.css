@@ -8,7 +8,7 @@ body {
     
 width: 42%;
 height: 80%;
-margin: 0px;
+margin-top:4em;
 background: #FBF7EE;
 }
 
@@ -68,6 +68,7 @@ display: flex;
 flex-direction: column;
 align-items: center;
 justify-content: center;
+padding-bottom: 2.5em;
 /* text-align: center; */
 }
 
